@@ -8,7 +8,7 @@ export const ENV = z
     NODE_ENV: z
       .enum(['development', 'production', 'test'])
       .default('development'),
-    PORT: z.string().min(1),
+    PORT: z.string().min(1).default('3000'),
     AWS_REGION: z.string().min(1).default('us-east-1'),
     DYNAMODB_ENDPOINT: z.string().min(1).default('http://localhost:4566'),
     JWT_SECRET: z.string().min(1).default('defaultSecretKey'),
