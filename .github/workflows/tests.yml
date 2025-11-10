@@ -6,6 +6,13 @@ jobs:
   jest:
     name: Jest Ubuntu
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: test
+      PORT: 3000
+      AWS_REGION: us-east-1
+      DYNAMODB_ENDPOINT: http://localhost:4566
+      JWT_SECRET: test-secret-key
+      SALT_ROUNDS: 12
     steps:
       - uses: actions/checkout@v4
 
