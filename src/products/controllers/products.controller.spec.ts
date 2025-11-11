@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ProductsController } from './products.controller';
 import { ProductService } from '../services/products.service';
-import { CreateProductDto } from '../dto/create-product.dto';
+import { CreateProductDto } from '../dtos/create-product.dto';
 import { IProduct, IPaginatedProducts } from '../interfaces/products.interface';
-import { UpdateProductDto } from '../dto/update-product.dto';
+import { UpdateProductDto } from '../dtos/update-product.dto';
 
 describe('ProductsController', () => {
   let controller: ProductsController;
