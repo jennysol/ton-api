@@ -7,13 +7,13 @@ A Ton Products API implementa um sistema de autenticação robusto baseado em **
 ## Arquitetura de Autenticação
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Auth Guard    │    │  Auth Service   │    │ Encryption Svc  │
-│                 │    │                 │    │                 │
-│ • JWT Validation│────│ • Login Logic   │────│ • bcrypt Hash   │
-│ • Route Protection│   │ • Token Gen     │    │ • Password Cmp  │
-│ • User Context  │    │ • User Validation│   │ • Salt Generation│
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+┌────────────────────┐    ┌─────────────────┐    ┌──────────────────┐
+│   Auth Guard       │    │  Auth Service   │    │ Encryption Svc   │
+│                    │    │                 │    │                  │
+│ • JWT Validation   │────│ • Login Logic   │────│ • bcrypt Hash    │
+│ • Route Protection │    │ • Token Gen     │    │ • Password Cmp   │
+│ • User Context     │    │ • User Validation│   │ • Salt Generation│
+└────────────────────┘    └─────────────────┘    └──────────────────┘
          │                       │                       │
          └──────────────────┬────────────────────────────┘
                            │
