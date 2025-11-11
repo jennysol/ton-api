@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { UserService } from './users.service';
-import { UsersRepository } from '../repositories/users.repository';
-import { IUser } from '../interfaces/users.interface';
+import { UserService } from './user.service';
+import { UsersRepository } from '../repositories/user.repository';
+import { IUser } from '../interfaces/user.interface';
 import { CreateUserDto } from '../dtos/create-user.dto';
 
 describe('UserService', () => {

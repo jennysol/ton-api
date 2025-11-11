@@ -19,12 +19,12 @@ import {
   ApiQuery,
   ApiBody,
 } from '@nestjs/swagger';
-import { ProductService } from '../services/products.service';
+import { ProductService } from '../services/product.service';
 import {
   CreateProductDto,
   CreateProductResponseDto,
 } from '../dtos/create-product.dto';
-import { IProduct, IPaginatedProducts } from '../interfaces/products.interface';
+import { IProduct, IPaginatedProducts } from '../interfaces/product.interface';
 import { JwtAuthGuard } from '../../auth/guards/auth.guard';
 import { UpdateProductDto } from '../dtos/update-product.dto';
 import { findAllResponseDto } from '../dtos/find-all.dto';

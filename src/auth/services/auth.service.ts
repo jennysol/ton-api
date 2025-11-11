@@ -5,8 +5,8 @@ import {
   Logger,
 } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { UserService } from '../../users/services/users.service';
-import { IUser } from '../../users/interfaces/users.interface';
+import { UserService } from '../../users/services/user.service';
+import { IUser } from '../../users/interfaces/user.interface';
 import { SignupDto, SignupResponseDto } from '../dtos/signup.dto';
 import { LoginDto, LoginResponseDto } from '../dtos/login.dto';
 import { EncryptionService } from '../../common/services/encryption/encryption.service';

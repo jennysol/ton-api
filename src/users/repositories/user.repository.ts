@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { User } from '../users.entity';
-import { IUser } from '../interfaces/users.interface';
+import { User } from '../entities/user.entity';
+import { IUser } from '../interfaces/user.interface';
 import { CreateUserDto } from '../dtos/create-user.dto';
 import { v4 as uuidv4 } from 'uuid';
 

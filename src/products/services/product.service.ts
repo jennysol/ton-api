@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { ProductsRepository } from '../repositories/products.repository';
-import { IPaginatedProducts, IProduct } from '../interfaces/products.interface';
+import { ProductsRepository } from '../repositories/product.repository';
+import { IPaginatedProducts, IProduct } from '../interfaces/product.interface';
 import { CreateProductDto } from '../dtos/create-product.dto';
 import { UpdateProductDto } from '../dtos/update-product.dto';
 

@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { ProductService } from './products.service';
-import { ProductsRepository } from '../repositories/products.repository';
-import { IProduct, IPaginatedProducts } from '../interfaces/products.interface';
+import { ProductService } from './product.service';
+import { ProductsRepository } from '../repositories/product.repository';
+import { IProduct, IPaginatedProducts } from '../interfaces/product.interface';
 import { CreateProductDto } from '../dtos/create-product.dto';
 import { UpdateProductDto } from '../dtos/update-product.dto';
 

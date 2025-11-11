@@ -13,5 +13,6 @@ export const ENV = z
     DYNAMODB_ENDPOINT: z.string().min(1).default('http://localhost:4566'),
     JWT_SECRET: z.string().min(1).default('defaultSecretKey'),
     SALT_ROUNDS: z.string().min(1).default('12'),
+    TABLE_NAME: z.string().min(1).default('ton-app'),
   })
   .parse(process.env);

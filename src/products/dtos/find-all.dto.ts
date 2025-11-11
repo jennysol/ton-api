@@ -1,4 +1,4 @@
-import { IProduct } from '../interfaces/products.interface';
+import { IProduct } from '../interfaces/product.interface';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class findAllResponseDto {

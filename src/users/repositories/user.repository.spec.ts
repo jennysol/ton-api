@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { Logger } from '@nestjs/common';
-import { IUser } from '../interfaces/users.interface';
+import { IUser } from '../interfaces/user.interface';
 import { CreateUserDto } from '../dtos/create-user.dto';
 
-jest.mock('../users.entity', () => ({
+jest.mock('../entities/user.entity', () => ({
   User: {
     get: jest.fn(),
     scan: {
@@ -24,8 +24,8 @@ jest.mock('uuid', () => ({
   v4: mockUuidV4,
 }));
 
-import { UsersRepository } from './users.repository';
-import { User } from '../users.entity';
+import { UsersRepository } from './user.repository';
+import { User } from '../entities/user.entity';
 
 describe('UsersRepository', () => {
   let repository: UsersRepository;

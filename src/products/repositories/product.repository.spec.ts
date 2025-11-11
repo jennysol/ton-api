@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { Logger } from '@nestjs/common';
-import { IProduct } from '../interfaces/products.interface';
+import { IProduct } from '../interfaces/product.interface';
 import { CreateProductDto } from '../dtos/create-product.dto';
 
-jest.mock('../products.entity', () => ({
+jest.mock('../entities/product.entity', () => ({
   Product: {
     get: jest.fn(),
     scan: {
@@ -21,8 +21,8 @@ jest.mock('uuid', () => ({
   v4: mockUuidV4,
 }));
 
-import { ProductsRepository } from './products.repository';
-import { Product } from '../products.entity';
+import { ProductsRepository } from './product.repository';
+import { Product } from '../entities/product.entity';
 
 describe('ProductsRepository', () => {
   let repository: ProductsRepository;

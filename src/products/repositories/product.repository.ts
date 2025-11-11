@@ -1,7 +1,7 @@
 import { Injectable, Logger, NotFoundException } from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
-import { IPaginatedProducts, IProduct } from '../interfaces/products.interface';
-import { Product } from '../products.entity';
+import { IPaginatedProducts, IProduct } from '../interfaces/product.interface';
+import { Product } from '../entities/product.entity';
 import { CreateProductDto } from '../dtos/create-product.dto';
 
 @Injectable()

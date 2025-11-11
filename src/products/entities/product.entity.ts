@@ -1,13 +1,5 @@
-import * as AWS from 'aws-sdk';
 import { Entity } from 'electrodb';
-import { ENV } from '../common/config/env';
-
-const client = new AWS.DynamoDB.DocumentClient({
-  region: ENV.AWS_REGION,
-  endpoint: ENV.DYNAMODB_ENDPOINT,
-});
-
-const table = 'ton-app';
+import { client, table } from '../../common/database/dynamodb/client';
 
 export const Product = new Entity(
   {
