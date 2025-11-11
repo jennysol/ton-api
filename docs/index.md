@@ -33,4 +33,3 @@ A **Ton Products API** é uma aplicação backend moderna que oferece:
 
 - [Repositório no GitHub](https://github.com/jennysol/Ton-products)
 - [Swagger UI](http://localhost:3000/reference) (quando rodando localmente)
-- [Collection do Postman](postman-collection.json)
