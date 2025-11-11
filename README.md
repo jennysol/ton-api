@@ -8,6 +8,10 @@
 
 Uma API RESTful completa para gerenciamento de produtos e autenticação de usuários, construída com NestJS, DynamoDB e JWT.
 
+## Demo Online
+
+**[https://jenifer-ton-app.com/reference](https://jenifer-ton-app.com/reference)**
+
 ## Visão Geral
 
 A **Ton API** oferece:
@@ -90,16 +94,16 @@ npm run test:cov
 - `PUT /products/:id` - Atualizar produto
 - `DELETE /products/:id` - Deletar produto
 
-**[Ver documentação completa da API](http://ton-api-environment.eba-f8yign3p.us-east-1.elasticbeanstalk.com/reference)**
+**[Ver documentação completa da API](https://jenifer-ton-app.com//reference)**
 
 ## Recursos de Segurança
 
-- ✅ **JWT Authentication** com refresh tokens
-- ✅ **bcrypt** para hash de senhas (abstração via EncryptionService)
-- ✅ **Validation pipes** para validação de entrada
-- ✅ **CORS** configurado para múltiplos domínios
-- ✅ **Rate limiting** para proteção contra spam
-- ✅ **Helmet** para headers de segurança
+- [x] **JWT Authentication** com refresh tokens
+- [x] **bcrypt** para hash de senhas (abstração via EncryptionService)
+- [x] **Validation pipes** para validação de entrada
+- [x] **CORS** configurado para múltiplos domínios
+- [x] **Rate limiting** para proteção contra spam
+- [x] **Helmet** para headers de segurança
 
 ## Arquitetura
 
@@ -133,4 +137,4 @@ A aplicação está configurada para deploy automático via GitHub Actions:
 **[Ver repositório e documentação do ton-front](https://github.com/jennysol/ton-front?tab=readme-ov-file#funcionalidades)**
 
 
-**[Documentação Completa](https://jennysol.github.io/ton-api/) | [API Demo](http://ton-api-environment.eba-f8yign3p.us-east-1.elasticbeanstalk.com/api-docs) | [Front Demo](https://ton-front-alpha.vercel.app/login) | [Infra](https://github.com/jennysol/ton-infra)**
+**[Documentação Completa](https://jennysol.github.io/ton-api/) | [API Demo](https://jenifer-ton-app.com) | [Front Demo](https://ton-front-alpha.vercel.app/login) | [Infra](https://github.com/jennysol/ton-infra)**
