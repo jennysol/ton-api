@@ -23,13 +23,13 @@ import { ProductService } from '../services/products.service';
 import {
   CreateProductDto,
   CreateProductResponseDto,
-} from '../dto/create-product.dto';
+} from '../dtos/create-product.dto';
 import { IProduct, IPaginatedProducts } from '../interfaces/products.interface';
-import { JwtAuthGuard } from '../../auth/guard/auth.guard';
-import { UpdateProductDto } from '../dto/update-product.dto';
-import { findAllResponseDto } from '../dto/find-all.dto';
-import { CreateProductValidationErrorDto } from '../dto/product-error.dto';
-import { NotFoundDto } from '../../common/dto/errors.dto';
+import { JwtAuthGuard } from '../../auth/guards/auth.guard';
+import { UpdateProductDto } from '../dtos/update-product.dto';
+import { findAllResponseDto } from '../dtos/find-all.dto';
+import { CreateProductValidationErrorDto } from '../dtos/product-error.dto';
+import { NotFoundDto } from '../../common/dtos/errors.dto';
 
 @ApiTags('Products')
 @Controller('products')

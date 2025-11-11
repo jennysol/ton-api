@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { Logger } from '@nestjs/common';
 import { IProduct } from '../interfaces/products.interface';
-import { CreateProductDto } from '../dto/create-product.dto';
+import { CreateProductDto } from '../dtos/create-product.dto';
 
 jest.mock('../products.entity', () => ({
   Product: {

@@ -2,8 +2,8 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { ProductService } from './products.service';
 import { ProductsRepository } from '../repositories/products.repository';
 import { IProduct, IPaginatedProducts } from '../interfaces/products.interface';
-import { CreateProductDto } from '../dto/create-product.dto';
-import { UpdateProductDto } from '../dto/update-product.dto';
+import { CreateProductDto } from '../dtos/create-product.dto';
+import { UpdateProductDto } from '../dtos/update-product.dto';
 
 describe('ProductService', () => {
   let service: ProductService;

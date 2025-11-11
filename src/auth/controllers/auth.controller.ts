@@ -8,13 +8,13 @@ import {
   ApiConflictResponse,
 } from '@nestjs/swagger';
 import { AuthService } from '../services/auth.service';
-import { LoginDto, LoginResponseDto } from '../dto/login.dto';
-import { SignupDto, SignupResponseDto } from '../dto/signup.dto';
+import { LoginDto, LoginResponseDto } from '../dtos/login.dto';
+import { SignupDto, SignupResponseDto } from '../dtos/signup.dto';
 import {
   CreateAuthValidationErrorDto,
   CreateAuthUserUnauthorizedDto,
   CreateAuthEmailConflictDto,
-} from '../dto/auth-error.dto';
+} from '../dtos/auth-error.dto';
 
 @Controller('auth')
 @ApiTags('auth')

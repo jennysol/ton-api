@@ -7,8 +7,8 @@ import {
 import { JwtService } from '@nestjs/jwt';
 import { UserService } from '../../users/services/users.service';
 import { IUser } from '../../users/interfaces/users.interface';
-import { SignupDto, SignupResponseDto } from '../dto/signup.dto';
-import { LoginDto, LoginResponseDto } from '../dto/login.dto';
+import { SignupDto, SignupResponseDto } from '../dtos/signup.dto';
+import { LoginDto, LoginResponseDto } from '../dtos/login.dto';
 import { EncryptionService } from '../../common/services/encryption/encryption.service';
 
 @Injectable()
