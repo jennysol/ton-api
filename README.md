@@ -12,6 +12,9 @@ Uma API RESTful completa para gerenciamento de produtos e autenticação de usu�
 
 **[https://jenifer-ton-app.com/reference](https://jenifer-ton-app.com/reference)**
 
+[Macbook-Air-jenifer-ton-app.com-2e9e_d18h4680l.webm](https://github.com/user-attachments/assets/8a48efc0-8242-4616-b3f4-d48d77be4196)
+
+
 ## Visão Geral
 
 A **Ton API** oferece:
