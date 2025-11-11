@@ -11,6 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install Dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Build
+        run: npm run build
+
       - name: Create ZIP deployment package
         run: zip -r deploy_package.zip ./
 
